@@ -3,7 +3,7 @@ import google.generativeai as genai
 st.title("MY AI APP")
 genai.configure(api_key="AIzaSyBcwMbtKtUFjGoXagqdeIOmZ-iO4t4sq30")
 text = st.text_input("Enter a Question:")
-if st.button("Clike Me"):
+if st.button("Clike ME"):
     if text.strip():
         model = genai.GenerativeModel('gemini-pro')
         chat = model.start_chat(history=[])
